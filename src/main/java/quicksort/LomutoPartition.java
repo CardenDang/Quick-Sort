@@ -3,6 +3,10 @@ package quicksort;
 public class LomutoPartition {
     private LomutoPartition() {}
 
+    /**
+     * Lomuto partition: pivot = a[high].
+     * Returns the pivot's final index after partitioning.
+     */
     public static int partition(int[] a, int low, int high) {
         // if the array is empty or doesn't exist, we can't partition anything so return -1
         if (a == null || a.length == 0) { 

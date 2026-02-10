@@ -3,6 +3,10 @@ package quicksort;
 public class HoarePartition {
     private HoarePartition() {}
 
+    /**
+     * Hoare partition: pivot = a[low].
+     * Returns a split index p.
+     */
     public static int partition(int[] a, int low, int high) {
         // if the array is empty or doesn't exist, we can't partition anything so return -1
         if (a == null || a.length == 0) {
